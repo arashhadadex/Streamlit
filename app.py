@@ -23,7 +23,7 @@ def to_ms(dt):
 def fetch_binance_data(start, end, interval):
     start_ms = to_ms(start)
     end_ms = to_ms(end) + (24 * 60 * 60 * 1000) - 1
-    url = "https://data.binance.com/api/v3/klines"
+    url = "https://api.binance.com/api/v3/klines"
     params = {
         "symbol": "BTCUSDT",
         "interval": interval,
